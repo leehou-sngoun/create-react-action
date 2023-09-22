@@ -33,10 +33,10 @@ jobs:
         EOF
     - name: Echo pods
       run: |
-        KUBECONFIG=~/.kube/kubeconfig.yaml kubectl get pods
-    - name: Echo deployments
-      run: |
-        KUBECONFIG=~/.kube/kubeconfig.yaml kubectl get deployments
+        KUBECONFIG=~/.kube/kubeconfig.yaml kubectl get ns
+    # - name: Echo deployments
+    #   run: |
+    #     KUBECONFIG=~/.kube/kubeconfig.yaml kubectl get deployments
       
     
     # - name: Set up GKE credentials
